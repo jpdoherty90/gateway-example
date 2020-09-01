@@ -1,0 +1,11 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    gateway:
+      routes:
+        - uri: http://localhost:8080
+          predicates:
+            - Path=/dog/hello
+
+
